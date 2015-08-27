@@ -162,6 +162,6 @@ Having now imported the index CSV data into Google Sheets, the following manipul
 
 This will need testing for statistical significance or display of any predictive power, the index and how its influence (correlation/causation) is reflective on market returns will have to be testing and modified.
 
-Although I am aware of the various methods and my motives in this piece, I am waiting to undertake my final year of my Maths degree at Bath where I will be formally studying Time Series Analysis. This should provide a good understanding so that I can finish of this piece.
+Although I am aware of the various methods and my motives in this piece, I am waiting to undertake my final year of my Maths degree at Bath where I will be formally studying Time Series Analysis. This should provide a good understanding so that I can finish off this piece.
 
 **Stay tuned, this is a work in progress!**
