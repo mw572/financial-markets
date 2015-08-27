@@ -173,9 +173,9 @@ These results confirm certain previous empirical findings on the higher correlat
 
 **Analysis**
 
-![image 9](Figures/image 9.jpg)
+![image 9](Figures/image 8.jpg)
 
-![image 10](Figures/image 10.jpg)
+![image 10](Figures/image 9.jpg)
 
 Table below shows that all bad news coefficients were positive. This means the any increase of pessimism by newspapers had a positive impact on the volatility of markets. Obviously, the impact was not the same for each newspaper or market. The Wall Street Journal had a strong impact on all markets. The bad news of Wall Street Journal and Financial Times had a significant impact (at 5% significance) on the simultaneous level of log-volatility in all markets (see the left panel in Tab. 2). Finally, Il Sole24Ore bad news influenced the volatility of the UK and Italian stock markets. As regards to market correlation, it is worth noting that Wall Street Journal’s pessimism had a significant impact on all correlations. Vice-versa, the Financial Times and Il Sole24Ore had an impact only on their respective markets (see the right panel of Tab. 2). This would confirm the leadership of Wall Street Journal in influencing the stock market and its worldwide impact. On the other hand, it is interesting to note that any increase of pessimism by the Wall Street Journal had a negative impact on the correlation between UK and Italian markets. This could be explained by the fact that the Wall Street Journal mainly focused on domestic affairs and negative news on the U.S. stock market could have lead investors to move their investments towards other markets or in general to explore a variety of investment strategies. This could have contributed to generate heterogeneity in stock market behaviour globally.
 
