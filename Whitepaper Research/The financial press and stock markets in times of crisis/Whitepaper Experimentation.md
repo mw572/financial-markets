@@ -88,7 +88,7 @@ We are aware at this point that there may be the case of no negative headlines a
 
 Obtaining a negative word dictionary will be required, this itself is quite contradictory as double negatives are positives, and we are not delving into the rigours of NLP to understand language structure. However due to the brevity of headlines (and the well known skew implied from the paper and general knowledge of media’s negativity) this should be less of an issue. I make the assumption that brief headlines are less likely to use double negatives, rather,  plain english with sensationalistic words.  
 
-A suitable code repository has been cloned from github (https://github.com/abromberg/sentiment_analysis)  LINK THIS   where this ‘bad word counting’ style of sentiment analysis has been performed in R. This was used as inspiration to my approach. 
+A suitable code [repository](https://github.com/abromberg/sentiment_analysis) has been cloned from github where this ‘bad word counting’ style of sentiment analysis has been performed in R. This was used as inspiration to my approach. 
 
 
 **Creating the index**
