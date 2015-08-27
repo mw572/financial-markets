@@ -1,13 +1,15 @@
-# ----------------------------------------------
-# Script written by Marcus Williamson - 04/08/15
-# ----------------------------------------------
-# Part of Whitepaper research for title:
-# "The financial press and stock markets in times of crisis"
-# ----------------------------------------------
-# Webscraping WSJ news 
-# ----------------------------------------------
+##############################################################
+# -----------------------------------------------------------#
+#        Script written by Marcus Williamson - 04/08/15      #
+# -----------------------------------------------------------#
+#          Part of Whitepaper research for title:            # 
+# "The financial press and stock markets in times of crisis" #
+# -----------------------------------------------------------#
+#                   Webscraping WSJ news                     #
+# -----------------------------------------------------------#
+##############################################################
 
-#Cleanup the DB before we start
+#cleanup the env before we start
 ls()
 rm(list = ls())
 
@@ -20,10 +22,10 @@ library(XML)
 library(data.table)
 library(plyr)
 
-#how many pages of data do we have:
-#SEARCHTERM IS MARKET
+#how many pages of data do we have, NOTE: searchterm is "market"
 urlbase <- 'http://www.wsj.com/search/term.html?KEYWORDS=market&isAdvanced=true&min-date=2014/01/01&max-date=2015/01/01&page=1&daysback=4y&andor=AND&sort=date-desc&source=wsjarticle'
 
+#parse
 doc=htmlTreeParse(urlbase,useInternalNodes=TRUE)
 ns = getNodeSet(doc,'//html/body/div[1]/div[2]/section[3]/div[1]/div[2]/div/div[2]/div[2]/menu/li[3]')
 
@@ -38,11 +40,10 @@ urlbaseB <- "&daysback=4y&andor=AND&sort=date-desc&source=wsjarticle"
 #create our scraping function which takes url input and returns scraped output
 scraper=function(urllink){
   
-  # get html page content
+  #get html page content
   doc=htmlTreeParse(urllink,useInternalNodes=TRUE)
   
-  # getting node sets
-  
+  #getting node sets
   #date of article
   rawdate=getNodeSet(doc,"/html/body/div[1]/div[2]/section[3]/div[1]/div[2]/div/div/ul/li/div/div/div[2]/ul/li/time/text()")
 
@@ -59,38 +60,40 @@ scraper=function(urllink){
   headline=sapply(headline,function(x) xmlValue(x))
   headline=data.table(headline)
   
-  # select the first price observation (Temp fix!)
-  #linePrice <- linePrice[1:1,]
-  
+  #put all the fields in a dataframe
   scrapedfile <- cbind(datePublished, headline)
   
-  # put all the fields in a dataframe
   return(scrapedfile)
 }  
-
+#end function
 
 #create location for our output
 scrapedfile.l=as.list(rep(NA,count))
 
-#for loop to do the scraping and placing in output
+#for loop to do the scraping and placing in output location
 for(i in 1:count){
+  
   urlgen = paste(urlbaseA,i,urlbaseB,sep="",collapse = NULL)
   scrapedfile.l[[i]]=scraper(urlgen)
-  print(paste(signif((i/count)*100,3),"%"))
+  print(paste(signif((i/count)*100,3),"%")) #checking progress
+  
 }
 
 #combining data outputs together
 scrapedfile <- rbindlist(scrapedfile.l)
 
-#Save our data to use later as backup
-save(scrapedfile, file = "WSJ-14-15-Backup.Rdata") #rawbackup
+#Save our data for later use
+save(scrapedfile, file = "WSJ-14-15-Backup.Rdata")
 
-#writing into table for csv output
+#writing into table ready for csv output
 output <- t(do.call(rbind,lapply(scrapedfile,matrix,ncol=nrow(scrapedfile),byrow=FALSE)))
 
 #ensuring named correctly
 colnames(output)[1:2] <- c("date","headline")
 
+#generating CSV file
 write.table(output, file="WSJ-2014-15-Market.csv",sep="|", quote = FALSE)
 
+#####################################################################
 ########################### END OF CODE #############################
+#####################################################################
