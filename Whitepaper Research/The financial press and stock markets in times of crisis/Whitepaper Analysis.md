@@ -1,7 +1,7 @@
 #The Financial Press and Stock Markets in Times of Crisis
 ###Whitepaper Analysis - 27/08/15 - Marcus Williamson
 
-Please find link to follow up piece here LINK IT
+Please find link to follow up piece [here](https://github.com/mw572/financial-markets/blob/master/Whitepaper%20Research/The%20financial%20press%20and%20stock%20markets%20in%20times%20of%20crisis/Whitepaper%20Experimentation.md)
 
 ---
 
@@ -125,22 +125,22 @@ __The bad news index:__
 
 Let Tk,t be the maximum number of available columns for a banner headline in the newspaper, then the relative importance index was:
 
-IMAGE 1
+![image 1](Figures/image 1.jpg)
 
 
 k = F,W,S and t = 1,...,T. Then the journal-specific bad news index, Bk,t, at time t for the journal k, was defined as:
 
-IMAGE 2
+![image 2](Figures/image 2.jpg)
 
 for k = F,W,S and t = 1,...,T.
 
-IMAGE 3
+![image 3](Figures/image 3.jpg)
 
 
 
 **Descriptive statistics**
 
-IMAGE 4
+![image 4](Figures/image 4.jpg)
 
 If we considered bad news dynamics, our one-year sample could be approximately divided into two subsamples, i.e., an initial period characterised by higher concentration of bad news, and the second one after Spring 2009, where bad news were generally less frequent. By comparing the three newspapers, it is evident that Wall Street Journal was more cautious and the financial Times published bad news more frequently, also for the second subsample.
 
@@ -148,7 +148,7 @@ Table 1 shows mean, standard deviation, skewness and kurtosis of the bad news in
 
 Our database also included the names in the amount of journalist to alter any front page leading article on the crisis. We calculated a Gini index that measure the concentration of articles per journalist. Not only did the financial Times concentrate more articles with fewer journalists (WSJ index 0.61, while FT took  0.66), It did so especially in low market volatility period (WSJ index for the second subsample took 0.68, while FT took 0.77). This meant that the stronger critical stance of the financial times in times of lower market volatility was due to fewer critical journalists.
 
-IMAGE 5
+![image 5](Figures/image 5.jpg)
 
 The next step was to calculate the correlation between newspapers, results show that newspaper pessimism was significantly positively correlated. The more positive correlations were between the Wall Street Journal in the financial Times, and between the Wall Street Journal and Il Sole24Ore. If we consider the difference between periods of high low market volatility, it is worth noting that the high correlations were in higher volatility periods between the Wall Street Journal of the financial Times, whereas correlations were not significant or negative in periods of low volatility. This meant that in periods of higher market volatility, differences between Wall Street Journal and financial Times drastically diminished. Indeed, in this period, these two leading newspapers basically conformed both in terms of timing and intensity of pessimism. On the other hand, significant differences persisted for other periods when market volatility was less pronounced.
 
@@ -158,15 +158,11 @@ The next step was to calculate the correlation between newspapers, results show 
 Let Xi,t indicate the log-return at time t for FTSE (i=UK), DowJones (i=US) and MIB (i=IT), the three stock market financial indexes to which the three newspapers refer more frequently. Let us calculate their volatility and correlation dynamics by means of a generalized autoregressive conditional heteroskedasticity (GARCH) model 
 with dynamic conditional correlation. For the sake of simplicity, we followed a non-parametric approach as follows:
 
-IMAGE 6
+![image 6](Figures/image 6.jpg)
 
-for i,j=US,UK,IT where Xhati,t was the empirical average over 
-IMAGE 6A
-was a smoothing factor and
-IMAGE 6B
-was a forgetting factor.
+for i,j=US,UK,IT where Xhati,t was the empirical average over ![image 6a](Figures/image 6a.jpg) was a smoothing factor and ![image 6b](Figures/image 6b.jpg) was a forgetting factor.
 
-IMAGE 7
+![image 7](Figures/image 7.jpg)
 
 The figure above shows the results of on nonparametric estimation procedure. The first row shows the log returns of the FTSE, Dow Jones and MIB market indices daily basis for closing values.
 
@@ -177,19 +173,20 @@ These results confirm certain previous empirical findings on the higher correlat
 
 **Analysis**
 
-IMAGE 9
-IMAGE 10
+![image 9](Figures/image 9.jpg)
+
+![image 10](Figures/image 10.jpg)
 
 Table below shows that all bad news coefficients were positive. This means the any increase of pessimism by newspapers had a positive impact on the volatility of markets. Obviously, the impact was not the same for each newspaper or market. The Wall Street Journal had a strong impact on all markets. The bad news of Wall Street Journal and Financial Times had a significant impact (at 5% significance) on the simultaneous level of log-volatility in all markets (see the left panel in Tab. 2). Finally, Il Sole24Ore bad news influenced the volatility of the UK and Italian stock markets. As regards to market correlation, it is worth noting that Wall Street Journal’s pessimism had a significant impact on all correlations. Vice-versa, the Financial Times and Il Sole24Ore had an impact only on their respective markets (see the right panel of Tab. 2). This would confirm the leadership of Wall Street Journal in influencing the stock market and its worldwide impact. On the other hand, it is interesting to note that any increase of pessimism by the Wall Street Journal had a negative impact on the correlation between UK and Italian markets. This could be explained by the fact that the Wall Street Journal mainly focused on domestic affairs and negative news on the U.S. stock market could have lead investors to move their investments towards other markets or in general to explore a variety of investment strategies. This could have contributed to generate heterogeneity in stock market behaviour globally.
 
-IMAGE 11
+![image 11](Figures/image 11.jpg)
 
 
 **Statistical Causal Relations**
 
 To look at the causes of statistical relationships in more detail, we performed a Granger-causality test that examined the lagged dependence structure between bad news and market correlation and volatility. This allowed us to verify whether bad new had any predictive value for market volatility and correlation. We considered each passive dependence between market and information, by setting 
 
-IMAGE 12
+![image 12](Figures/image 12.jpg)
 
 and considering VAR models.
 
@@ -199,7 +196,11 @@ VOLATILITY
 A joint test on the statistical causal relationships of volatility and pessimism was based on the following VAR model of dimension 6 and order p:
 
 
-IMAGE 13,14,15
+![image 13](Figures/image 13.jpg)
+
+![image 14](Figures/image 14.jpg)
+
+![image 15](Figures/image 15.jpg)
 
 
 Results showed that:
@@ -210,7 +211,7 @@ Results showed that:
 
 We tested the hypothesis that volatility did not jointly statistically cause, in a Granger sense, the bad-news indexes. To look at the causal relationship between each market-specific volatility and the three newspapers, we also tested separately the hypothesis that neither each one of the three bad-news indexes, nor all three indexes jointly considered statistically caused, in a Granger sense, the market-specific volatility. To look at the relationship between each newspaper and the three markets, we did the same for newspaper bad news.
 
-IMAGE 16
+![image 16](Figures/image 16.jpg)
 
 Tab. 4 shows the results of these joint and pairwise tests. First, the p-value of the joint test in the last column and last row, in the left panel, indicates that newspaper bad news was fully caused by market turmoil. Therefore, stock market behaviour was the essential source of bad news and newspapers did not have unrealistically pessimistic stances. Secondly, if we look at the p- values of almost all the pairwise causality tests (see the left panel), this statistical causality direction from markets to newspapers was true for all log-volatility and bad news indexes. On the other hand, if we look at the p-values in the last column, last row in the right panel, we should conclude that, in general, the financial press did not determine market volatility. More specifically, results showed that Wall Street Journal bad news alone had a strong statistical, causal impact on market volatility (see the first row in the right panel). **Generally speaking, we could not predict market volatility only by looking at financial press bad news**.
 
@@ -219,7 +220,9 @@ CORRELATIONS
 
 The VAR model of order q for bad-news indexes and correlations was as follows:
 
-IMAGE 17, 18
+![image 17](Figures/image 17.jpg)
+
+![image 18](Figures/image 18.jpg)
 
 Our results (see Table 5, left column) showed that:
 1. **Wall Street Journal** bad news (one lag) had a **negative impact on the correlation between U.S. and UK stock markets**. Indeed, bad news in the Wall Street Journal reduced the co-movement of these markets. This could be explained in terms of outflow of capital from the U.S. stock market and inflow into the UK market.
@@ -231,7 +234,7 @@ In addition, results (see Table 6, right column) showed that:
 1. Furthermore, higher (one lag) **correlation between the UK and Italian stock markets increased the pessimism of the Financial Times**.
 1. Finally, **all correlations had a significant impact on Il Sole24Ore**, similar to the Wall Street Journal.
 
-IMAGE 19
+![image 19](Figures/image 19.jpg)
 
 We performed a joint and pairwise Granger causality test to rigorously asses the presence of causal relationships, as we did for log-volatility:
 1. The last column, last row in the left panel of tab. 6 **shows that all correlations had a Granger causal effect on all bad news indexes**.
@@ -255,18 +258,19 @@ In order to corroborate our findings better, we performed further statistical te
 1. The situation with the **Financial Times was different**. In this case, the effect of **correlation for low and high returns were statistically stronger than that of closing returns**. Il Sole24ore showed weak correlation effects in these downturn and upturn cases.
 1.It is important to note that the **FTSE-MIB correlation had a strong effect on the Il Sole24ore bad news independent** of the type of market phases.
 
-IMAGE 20
+![image 20](Figures/image 20.jpg)
 
 We then examined the robustness of the results on the choice of the smoothing factor in the estimation of volatility and correlation. Lower values of  corresponded to higher weights for the most recent observations in the window considered. This leads to volatility and correlation that were more sensitive to large variations in returns. Thus we verified whether these results survived to the inclusion of a higher level of noise in the estimation of variance and correlation. Table 8 shows that Wall Street Journal bad news index was significant for the DJ-FTSE correlation as in previous analysis, but that it was also significant for DJ-MIB correlation. It is worth noting that, in this case, the Financial Times became statistically significant for FTSE-MIB correlation.
 
-
-IMAGE 21
+![image 21](Figures/image 21.jpg)
 
 We also investigated the case of the Financial Times better, trying to understand especially whether the relationship between its bad news and stock market was influenced by a small number of critical journalists. First, we distinguished two bad news indexes, the first, for the group of central journalists and the second,for the residual group (non-central journalists). We assumed that a journalist was central when he/she wrote more than nine commentaries in periods of high newspaper’s pessimism. We defined a period of high pessimism whenever the Financial times bad news index was higher than two. These criteria gave us nine central Financial Times journalists, such as Krishna Guha, Francesco Guerrera (now at the Wall Street Journal), and Ralph Atkins among others.
 
 Fig. 3 shows that the two indexes for the two groups had different dynamics and often moved in opposite directions leading
 
-IMAGE 22,23
+![image 22](Figures/image 22.jpg)
+
+![image 23](Figures/image 23.jpg)
 
 Table 9 shows that the bad news index of the group of central journalists had a significant impact (at the 5% significance level) on the contemporaneous level of log-volatility in all markets (see the left panel). On the contrary, there was no relationship between the pessimism of non-central journalists and market volatility and correlation. This could indicate that the opinion of certain influential commentators was more considered by the market and revealed a specific strategy of the newspaper, i.e., to assign commentaries to more critical journalists in specific phases of the crisis.
 
@@ -290,4 +294,4 @@ Moreover, it is also important to note that press pessimism and market behaviour
 
 ####5. PDF Link
 
-LINK 1
+Please find the PDF saved [here](https://github.com/mw572/financial-markets/blob/master/Whitepaper%20Research/The%20financial%20press%20and%20stock%20markets%20in%20times%20of%20crisis/Being%20on%20the%20%20Field%20When%20the%20Game%20Is%20Still%20Under%20Way.%20The%20Financial%20Press%20and%20Stock%20Markets%20in%20Times%20of%20Crisis.pdf)
