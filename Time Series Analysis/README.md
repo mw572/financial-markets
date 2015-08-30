@@ -1,6 +1,6 @@
 #Time Series Analysis
 
-####Marcus Williamson - 30/08/15
+#####Marcus Williamson - 30/08/15
 
 ---
 ##Neural Network S&P 500 forecast project
@@ -21,4 +21,4 @@ Covered in notebook:
 ---
 ##Example Neural Network
 
-I built a [simple Neural Network](https://github.com/mw572/financial-markets/blob/master/Time%20Series%20Analysis/Example%20%26%20Course%20Notes/Neural%20Net%20-%20Simple%20Maths%20Example.ipynb) from scratch following the notes and material from Stephen Welch's youtube [course](https://www.youtube.com/watch?v=bxe2T-V8XRs) my notes can be found [here](https://github.com/mw572/financial-markets/blob/master/Time%20Series%20Analysis/Example%20%26%20Course%20Notes/Neural%20Networks%20Demystified%20Course.ipynb)
+I built a [simple Neural Network](https://github.com/mw572/financial-markets/blob/master/Time%20Series%20Analysis/Example%20%26%20Course%20Notes/Neural%20Net%20-%20Simple%20Maths%20Example.ipynb) from scratch following the notes and material from Stephen Welch's youtube [course](https://www.youtube.com/watch?v=bxe2T-V8XRs) my notes can be found [here](https://github.com/mw572/financial-markets/blob/master/Time%20Series%20Analysis/Example%20%26%20Course%20Notes/Neural%20Networks%20Demystified%20Course.ipynb).
