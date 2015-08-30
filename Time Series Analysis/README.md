@@ -3,7 +3,7 @@
 ###Marcus Williamson - 30/08/15
 
 ---
-##S&P 500 forecast project
+##Neural Network S&P 500 forecast project
 
 I experimented with NNet framework to look at its predictive power in calling the directional change of the S&P 500 indexin the following week considering current data and lagged data snippets. Click [here](https://github.com/mw572/financial-markets/blob/master/Time%20Series%20Analysis/Neural%20Network%20-%20Time%20Series%20Prediction.ipynb) for the final Notebook.
 
