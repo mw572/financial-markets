@@ -1,6 +1,6 @@
 #Time Series Analysis
 
-###Marcus Williamson - 30/08/15
+####Marcus Williamson - 30/08/15
 
 ---
 ##Neural Network S&P 500 forecast project
