@@ -16,4 +16,6 @@ Covered in notebook:
 * Fear & Greed indicator 
 * Accuracy examination useing cross validation
 
+**I am looking to utilise the simple model created in this project with some algorithms that I am developing to give a directional bias for specific strategies such as momentum traders.**
+
 ---
