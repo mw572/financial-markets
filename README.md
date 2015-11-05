@@ -1,6 +1,6 @@
 # Financial Markets Repo
 
->Anything motivated by greed
+>Anything motivated by fear & greed
 
 ###Marcus Williamson 2015
 
