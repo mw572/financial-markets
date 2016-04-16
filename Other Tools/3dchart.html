@@ -1,0 +1,52 @@
+<div id="myDiv" style="width:800px;height:500px"></div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+<script>
+        
+        JSONURL = 'https://spreadsheets.google.com/feeds/cells/13E-ZQTiELYYYJcbb2Nqk_WaUKUdlfslW79xzrHshTRY/od6/public/basic?alt=json';
+        
+				
+        // plotting function to create the 3d chart
+        function plot(z1){
+        
+        var data_z1 = {z: z1, type: 'surface'};
+        
+        // plot parameters
+        var layout = {
+        title: "VIX Surface",
+        scene: {
+    		xaxis: {title: 'Expiry'},
+    		yaxis: {title: 'Time'},
+    		zaxis: {title: 'Reading'}},
+        
+    		};
+        // Plotting the surface
+        Plotly.newPlot('myDiv', [data_z1],layout);
+        };
+        
+        // function to handle the data 
+        function callback(data){
+        
+        // taking our ajax functions data in json form
+        var cells = data.feed.entry;
+        text = JSON.stringify(cells);
+        text = text.substring(text.indexOf("content")+30,text.length-178);
+        data = JSON.parse(text);
+        
+        // test plot data
+        //z1 = [[18.05,18.2,19.4,20.38,21.25],[18.049999,19.075,20.125,20.975,21.675],[18.34,19.625,20.675,21.325,21.875]];
+        
+        // call function to plot chart
+        plot(data);
+        };
+        
+        // calling data from google sheets
+        $.ajax({url:JSONURL, success: function(data){callback(data);}});
+</script>
+       
+        
+
+
+        
